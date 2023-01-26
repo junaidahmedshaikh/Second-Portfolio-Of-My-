@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bebas+Neue&family=Oswald&family=Staatliches&display=swap');
+
+.aboutPage-section{
+    padding: 0px 10rem;
+}
+
+.aboutPage-Para span{
+font-size: 2rem;
+}
+.aboutPage-Para p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin: 1rem 0;
+    line-height: 3rem;
+}
+
+@media (max-width: 700px){
+    .aboutPage-section{
+        line-height: 8rem;
+    }
+    .aboutPage-Para p{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+
+  /* Toggle CSS */
+  .switch {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.363);
+    border-radius: 5px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  .switch div {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    position: absolute;
+  }
+  
+  .switch span {
+    background: var(--light-primary-font-color);
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s, width 0.5s;
+  }
+  
+  .switch .line-1 {
+    width: 50%;
+    transform: translate(-100%, -10px);
+    transform-origin: 0 0;
+  }
+  
+  .switch .line-3 {
+    width: 50%;
+    left: auto;
+    right: 0;
+    transform: translate(0, 10px);
+    transform-origin: 100% 0;
+  }
+  
+  input:checked + div span.line-1 {
+    transform: translate(0, 0) rotate(-45deg);
+  }
+  
+  input:checked +  div span.line-3 {
+    transform: translate(-100%, 0) rotate(-45deg);
+  }
+  
+  input:checked + div span.line-2 {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }

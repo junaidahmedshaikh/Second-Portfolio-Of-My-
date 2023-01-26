@@ -1,0 +1,63 @@
+*{
+    font-size: 10px;
+    --shadow-value: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+}
+:root{
+   --border-gradient-color: linear-gradient(90deg, rgba(64,120,192,1) 0%, rgba(10,102,194,1) 65%, rgba(10,102,194,1) 100%);
+}
+#contactPage-Main{
+    display: grid;
+    place-items: center;
+    height: 80vh;
+}
+/* .contactPage-section{
+    border: 2px solid red;
+} */
+#contactMe-header{
+    font-size: 3rem;
+    margin: 2rem;
+    display: grid;
+    place-content: center;
+    font-family: var(--second-font-family);
+    color: var(--primary-font-color);
+}
+.contactPage-Form{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+}
+.contactPage-Form input::placeholder{
+    color: var(--light-primary-font-color);
+}
+.contactPage-Form input{
+    padding: 1rem 3rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var();
+    color: var(--primary-font-color);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+    outline: none;
+}
+input:focus{
+    color: var(--primary-font-color);
+    box-shadow: var(--shadow-value);
+    border-radius: 2rem;
+    transition: all .5s;
+}
+#formSubmit{
+    border: none;
+    border-radius: 5rem;
+    background: none;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    color: var(--primary-font-color);
+    cursor: pointer;
+}
+#formSubmit:hover{
+    transition: all .5s;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+}

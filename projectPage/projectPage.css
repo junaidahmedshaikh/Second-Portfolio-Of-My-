@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bebas+Neue&family=Oswald&family=Staatliches&display=swap');
+
+.header-of-projectPage_Section{
+    padding: 2rem 0;
+}
+.work-project-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    grid-gap: 1rem;
+}
+
+.work-project-box a {
+    display: block;
+    border-radius: 1rem;
+    background-color: var(--box-color);
+    text-decoration: none;
+    background-color: var(--primary-color);
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+    padding: 1rem;
+}
+.work-project-box a:hover{
+    /* filter: blur(1px);
+    transition: all .5s; */
+    color: #CCCCCC;
+    /* box-shadow: 0 1rem 2rem rgb(0 0 0 / 40%); */
+    transform: rotate(5deg);
+    transition: all .5s;
+    box-shadow: none;
+}
+.work-project-box span{
+    display: none;
+}
+
+.work-project-box span:hover{
+    display: contents;
+    font-size: 2rem;
+}
+.work-card img {
+    border-radius: 1rem;
+    height: 80%;
+    width: 100%;
+}
+
+.work-card h3 {
+    font-size: 2rem;
+    font-family: var(--second-font-family);
+    letter-spacing: .1.3rem;
+    color: var(--primary-font-color);
+    padding: 0 1rem;
+}
+
+.work-card p {
+    padding: 0 1rem;
+}

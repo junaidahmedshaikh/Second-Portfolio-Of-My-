@@ -1,0 +1,126 @@
+#skillsPage-Main {
+    padding: 0 10rem;
+}
+
+.skill-Container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+/* Boxes Of Skills */
+.skill-box {
+    grid-gap: 1rem;
+    margin: 2rem;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: auto;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.skill-box i {
+    display: grid;
+    place-content: center;
+    font-size: 4rem;
+}
+
+.skill-box h2 {
+    font-size: 2rem;
+}
+
+.skill-box img {
+
+    height: 4rem;
+    width: 4rem;
+}
+
+@media (max-width: 1190px) {
+    #skillsPage-Main {
+        padding: 0 6rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .skill-Container {
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .primary-heading-of-pages {
+        display: block;
+        margin: auto;
+        font-size: 6rem;
+    }
+
+    .skill-box {
+        margin: 1rem;
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .skill-box {
+        height: 100%;
+        width: 63%;
+    }
+}
+@media (max-width: 700px) {
+    .skill-box {
+        height: 100%;
+        width: 73%;
+    }
+}
+@media (max-width: 600px) {
+    .skill-box {
+        height: 100%;
+        width: 83%;
+    }
+}
+@media (max-width: 500px) {
+    .skill-box {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    #skillsPage-Main {
+        padding: 0 3rem;
+    }
+    .skill-Container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+    .primary-heading-of-pages {
+        font-size: 4rem;
+    }
+    .skill-box {
+        height: 77%;
+        width: 77%;
+    }
+    .skill-box img {
+        height: 100%;
+        width: 32%;
+    }
+    .skill-box h2 {
+        font-size: 100%;
+    }
+}
+@media (max-width: 350px){
+    #skillsPage-Main {
+        padding: 0 1rem;
+    }
+}
+@media (max-width: 280px){
+    .primary-heading-of-pages {
+        font-size: 3rem;
+    }
+    .skill-Container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

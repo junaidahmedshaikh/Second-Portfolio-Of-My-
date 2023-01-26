@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junaid | Contact Me</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/contactPage/contactPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main id="contactPage-Main">
+        <section class="contactPage-section">
+            <h1 id="contactMe-header">Contact Me</h1>
+            <form class="contactPage-Form" onsubmit="sendEmail(); reset(); return false">
+                <input id="userName" placeholder="Enter Your Name" type="text">
+                <input id="userNo" placeholder="Enter Your Number" type="text">
+                <input id="userEmail" placeholder="Enter Your Email" type="mail">
+                <!-- <textarea rows="3" type="text" name="" placeholder="How I Can Help U?" id="Massage"></textarea> -->
+                <button id="formSubmit" type="submit" href=""> Submit</button>
+            </form>
+        </section>
+    </main>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "addyjames76@gmail",
+    Password : "lorem1234",
+    To : 'addyjames767@gmail.com',
+    From : document.getElementById('userEmail').value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script> -->
+</body>
+</html>
