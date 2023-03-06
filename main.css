@@ -29,23 +29,30 @@ body[data-nav="true"]>main {
     transform: translateY(-10%);
 
 }
-
+body.dark{
+    background-color: #0077b5;
+}
 main {
     transition: transform 500ms cubic-bezier(.13, .53, .38, .97);
 }
 
+/* Dark Mode Button CSS */
+.darkmode-div{
+    border: 2px solid red;
+    padding: 2rem;
+}
+/* Navigation Button */
 #nav-toggle {
     z-index: 3;
     /* background-color: black; */
     position: absolute;
     left: 50%;
     top: 90%;
+    border: none;
+    background: transparent;
 }
-
-/* Navigation Button */
 #navbar {
-    border: 2px solid red;
-    height: 50vh;
+    height: 33vh;
     width: 100%;
     z-index: 1;
     position: absolute;
@@ -62,20 +69,32 @@ main {
 .navbar-links {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
     gap: clamp(1rem, 2vw, 2rem);
-    margin-top: clamp(2rem, 2vw, 3rem);
+    /* margin-top: clamp(2rem, 2vw, 3rem); */
     padding: 0rem clamp(1rem, 2vw, 2rem);
-    /* transform: translateY(70%) scale(.9); */
     transition: transform 500ms cubic-bezier(.13, .53, .38, .97);
 }
-
+/* .navbar-links:hover{
+    opacity: .5;
+} */
+.navbar-card{
+    margin: 2rem 0;
+}
+.navbar-card:hover{
+    transition: all .9s;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
 .navbar-links h2 {
     font-size: 2rem;
     color: var(--primary-font-color);
     font-family: var(--main-font-family);
 }
-
+.navbar-card img{
+    /* height: 100%;
+    width: 100%; */
+    height: 100%;
+    width: 100%;
+}
 .homepage_section {
     background-color: var(--primary-color);
     width: 100vw;
@@ -112,16 +131,26 @@ main {
 }
 
 /* Responsive Section */
-@media (max-width: 734pc) {
+@media (max-width: 734px) {
     .primary-heading-of-homepage {
         font-size: 4rem;
     }
+    #navbar {
+        height: 27vh;
+    }
+    
 }
 
 @media (max-width: 517px) {
     .primary-heading-of-homepage {
         font-size: 3rem;
         line-height: 5rem;
+    }
+    #navbar {
+        height: 23vh;
+    }
+    .navbar-links h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -251,6 +280,7 @@ body {
     z-index: 1;
     cursor: pointer;
     position: absolute;
+    left: 0;
 }
 
 .switch div {

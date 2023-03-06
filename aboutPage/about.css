@@ -26,7 +26,7 @@ font-size: 2rem;
 }
 
   /* Toggle CSS */
-  .switch {
+  /* .switch {
     position: relative;
     cursor: pointer;
     width: 40px;
@@ -88,4 +88,4 @@ font-size: 2rem;
   
   input:checked + div span.line-2 {
     transform: translate(-50%, -50%) rotate(45deg);
-  }
+  } */
