@@ -79,13 +79,16 @@ main {
 } */
 .navbar-card{
     margin: 2rem 0;
+    text-decoration: none;
 }
 .navbar-card:hover{
     transition: all .9s;
     box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 .navbar-links h2 {
+    padding-left: 2rem;
     font-size: 2rem;
+    background: var(--primary-color);
     color: var(--primary-font-color);
     font-family: var(--main-font-family);
 }
