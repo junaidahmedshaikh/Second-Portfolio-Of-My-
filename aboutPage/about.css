@@ -1,32 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bebas+Neue&family=Oswald&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bebas+Neue&family=Oswald&family=Staatliches&display=swap");
 
-.aboutPage-section{
-    padding: 0px 10rem;
+
+.aboutPage-section {
+  padding: 0px 10rem;
 }
 
-.aboutPage-Para span{
-font-size: 2rem;
+.aboutPage-Para span {
+  font-size: 2rem;
+  font-family: var(--main-font-family);
+  margin: 2rem 0;
+  /* box-shadow: var(--outer-shadow);
+  padding: var(--padding-for-shadow);
+  border-radius: var(--border-for-shadow); */
+}
+#about-name-of-intro {
+  letter-spacing: 0.05rem;
+  font-size: 2rem;
+  font-family: var(--font-for-name);
+}
+.aboutPage-Para  {
+  box-shadow: var(--inner-shadow);
+  padding: var(--padding-for-shadow);
+  border-radius: var(--border-for-shadow);
 }
 .aboutPage-Para p{
-    font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0;
+  line-height: 3rem;
+}
+
+.resume-box a,
+.resume-box i {
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--primary-font-color);
+  font-family: var(--second-font-family);
+}
+/* 
+.resume-box a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+} */
+.resume-box a:hover {
+  /* width: 100%; */
+  border-bottom: 0.2rem solid var(--primary-font-color);
+  transition: all 0.1s;
+  border-radius: 0.1rem;
+}
+@media (max-width: 700px) {
+  .aboutPage-section {
+    line-height: 8rem;
+  }
+  .aboutPage-Para p {
     font-size: 2rem;
-    letter-spacing: .1rem;
-    margin: 1rem 0;
-    line-height: 3rem;
+    line-height: 2.5rem;
+  }
 }
 
-@media (max-width: 700px){
-    .aboutPage-section{
-        line-height: 8rem;
-    }
-    .aboutPage-Para p{
-        font-size: 2rem;
-        line-height: 2.5rem;
-    }
-}
-
-  /* Toggle CSS */
-  /* .switch {
+/* Toggle CSS */
+/* .switch {
     position: relative;
     cursor: pointer;
     width: 40px;

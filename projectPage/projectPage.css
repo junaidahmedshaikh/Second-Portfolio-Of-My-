@@ -5,33 +5,32 @@
 }
 .work-project-box {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     grid-gap: 1rem;
+    padding: 1.5rem;
 }
-
-.work-project-box a {
+/* Project Card */
+.work-card {
     display: block;
-    border-radius: 1rem;
-    background-color: var(--box-color);
+    border-radius: var(--border-for-shadow);
+    background-color: var(--bg-color);
     text-decoration: none;
-    background-color: var(--primary-color);
-    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
     padding: 1rem;
+    box-shadow: var(--outer-shadow);
 }
-.work-project-box a:hover{
-    /* filter: blur(1px);
-    transition: all .5s; */
-    color: #CCCCCC;
-    /* box-shadow: 0 1rem 2rem rgb(0 0 0 / 40%); */
-    transform: rotate(5deg);
+/* .work-card:hover{
     transition: all .5s;
-    box-shadow: none;
+} */
+.work-project-box a:hover{
+    filter: blur(1px); 
+    transition: all .5s; 
+    box-shadow: var(--inner-shadow);
 }
-.work-project-box span{
+.work-card span{
     display: none;
 }
 
-.work-project-box span:hover{
+.work-card span:hover{
     display: contents;
     font-size: 2rem;
 }

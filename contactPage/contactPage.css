@@ -2,17 +2,28 @@
     font-size: 10px;
     --shadow-value: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
 }
-:root{
-   --border-gradient-color: linear-gradient(90deg, rgba(64,120,192,1) 0%, rgba(10,102,194,1) 65%, rgba(10,102,194,1) 100%);
-}
-#contactPage-Main{
-    display: grid;
-    place-items: center;
-    height: 80vh;
-}
-/* .contactPage-section{
-    border: 2px solid red;
+/* @font-face {
+    font-family: myFont;
+    src: url(FontFamily/heading.otf);
 } */
+:root{
+   /* --border-gradient-color: linear-gradient(90deg, rgba(64,120,192,1) 0%, rgba(10,102,194,1) 65%, rgba(10,102,194,1) 100%); */
+   --btn-press-bg-color: #e5e5ef;
+   --btn-font-color: #7577a0;
+   --btn-disable-color: #d6d6e3;
+    /* --inner-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5); */
+}
+
+#contactPage-Main{
+    /* display: grid; */
+    height: 80vh;
+    width: 100vw;
+    padding: 0 10rem;
+}
+/* 
+.contactPage-section{
+    border: 2px solid red;
+}
 #contactMe-header{
     font-size: 3rem;
     margin: 2rem;
@@ -60,4 +71,118 @@ input:focus{
 #formSubmit:hover{
     transition: all .5s;
     box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+    box-shadow: 
+    20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+} */
+
+#form-of-contactPage{
+    display: grid;
+    padding: 10% 6rem;
+    border-radius: 1rem;
+    box-shadow: var(--inner-shadow);
+}
+#form-of-contactPage input {
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 10rem;
+    box-shadow: var(--inner-shadow);
+    color: var(--dark-primary-font-color);
+}
+#form-of-contactPage input::placeholder{
+font-size: 1.2rem;
+color: var(--dark-primary-font-color);
+opacity: .5;
+}
+#form-of-contactPage input[type=submit] {
+background-color: transparent;
+border: none;
+border-radius: 50px;
+font-size: 1.5rem;
+font-weight: bold;
+box-shadow: var(--inner-shadow);
+color: var(--btn-font-color);
+cursor: pointer;
+}
+#form-of-contactPage input[type=submit]:hover{
+background-color: var(--btn-press-bg-color);
+}
+/* Main Container Of Section  */
+.contactPage-section{
+    /* display: grid; */
+     height: 100%;
+     width: 100%;
+ }
+ .contact-container{
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     margin: 8rem 0;
+ }
+/* Left Side Of Contact Page */
+.header-section-of-left-page{
+    padding-bottom: 5rem;
+    box-shadow: var(--inner-shadow);
+    border-radius: var(--border-for-shadow);
+    padding: var(--padding-for-shadow);
+    margin: var(--margin-top-bottom);
+}
+.header-section-of-left-page h2{
+    font-family: var(--main-font-family);
+    font-size: 2rem;
+    letter-spacing: .03rem;
+    line-height: none;
+}
+/* .header-section-of-left-page hr{
+
+} */
+.header-section-of-left-page p{
+    font-family: courier-font;
+    letter-spacing: .03rem;
+    font-size: 1.3rem;
+}
+/* Heading :- Email & Social Network */
+.left-section-box-heading{
+    font-size: 1.5rem;
+    font-family: var(--main-font-family);
+    margin-right: .5rem;
+    color: var(--dark-primary-font-color);
+}
+/* Mail */
+.left-section-mail-box{
+    box-shadow: var(--inner-shadow);
+    border-radius: var(--border-for-shadow);
+    padding: var(--padding-for-shadow);
+    margin: var(--margin-top-bottom);
+}
+.left-section-mail-box a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: courier-font;
+    color: blue;
+}
+/* Social Network */
+.social-network-box{
+    box-shadow: var(--inner-shadow);
+    padding: var(--padding-for-shadow);
+    border-radius: var(--border-for-shadow);
+    margin: var(--margin-top-bottom);
+}
+.social-network-link i{
+    font-size: 2rem;
+    color: var(--btn-font-color);
+    padding: 2rem 1rem 2rem 0;
+}
+.right-section-of-contact-page img{
+    /* height: 100%;
+    width: 80%;
+    object-fit: cover; */
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
 }
