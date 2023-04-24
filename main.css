@@ -68,7 +68,7 @@ hr{
 }
 .all-page-heading {
   font-size: 7rem;
-  color: var(--dark-primary-font-color);
+  color: var(--primary-font-color);
   font-family: headingOfPage;
 }
 /* Dark Mode Button CSS */
