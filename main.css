@@ -5,6 +5,7 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @font-face {
   font-family: headingOfPage;
   src: url(/FontFamily/VT323/VT323-Regular.ttf);
@@ -13,6 +14,10 @@
   font-family: courier-font;
   src: url(/FontFamily/Courier_Prime/CourierPrime-Regular.ttf);
 }
+/* @font-face {
+  font-family: subHeadingFont;
+  src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+} */
 :root {
   /* Color Section */
   --bg-color: #e6e9f3;
@@ -23,7 +28,7 @@
   --light-primary-font-color: #898c9d;
   /* Font Family */
 
-  --main-font-family: "Bebas Neue", cursive;
+  --main-font-family: 'Poppins', sans-serif;
   --second-font-family: "Oswald", sans-serif;
   --font-for-name: "Staatliches", cursive;
   --para-heading: "paraHeading", sans-serif;
@@ -115,18 +120,19 @@ hr{
 .navbar-card {
   margin: 2rem 0;
   text-decoration: none;
+  border-radius: var(--border-for-shadow);
 }
 .navbar-card:hover {
   transition: all 0.9s;
   box-shadow: var(--outer-shadow);
 }
-.navbar-links h2 {
+/* .navbar-links h2 {
   padding-left: 2rem;
   font-size: 2rem;
   background: var(--bg-color);
   color: var(--primary-font-color);
   font-family: headingOfPage;
-}
+} */
 .navbar-card img {
   height: 100%;
   width: 100%;

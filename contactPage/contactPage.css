@@ -163,7 +163,7 @@ background-color: var(--btn-press-bg-color);
     font-size: 1.5rem;
     text-decoration: none;
     font-family: courier-font;
-    color: blue;
+    color: var(--btn-font-color);
 }
 /* Social Network */
 .social-network-box{
