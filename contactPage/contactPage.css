@@ -75,7 +75,7 @@ input:focus{
     20px 20px 60px #bebebe,
     -20px -20px 60px #ffffff;
 } */
-
+/* 
 #form-of-contactPage{
     display: grid;
     padding: 10% 6rem;
@@ -110,7 +110,7 @@ cursor: pointer;
 }
 #form-of-contactPage input[type=submit]:hover{
 background-color: var(--btn-press-bg-color);
-}
+} */
 /* Main Container Of Section  */
 .contactPage-section{
     /* display: grid; */
@@ -141,7 +141,7 @@ background-color: var(--btn-press-bg-color);
 
 } */
 .header-section-of-left-page p{
-    font-family: courier-font;
+    font-family: var(--main-font-family);
     letter-spacing: .03rem;
     font-size: 1.3rem;
 }
@@ -150,33 +150,32 @@ background-color: var(--btn-press-bg-color);
     font-size: 1.5rem;
     font-family: var(--main-font-family);
     margin-right: .5rem;
-    color: var(--dark-primary-font-color);
+    color: var(--primary-font-color);
 }
 /* Mail */
-.left-section-mail-box{
+.left-section-mail-box, .social-network-box{
+    font-family: var(--main-font-family);
+    font-weight: 550;
     box-shadow: var(--inner-shadow);
     border-radius: var(--border-for-shadow);
     padding: var(--padding-for-shadow);
     margin: var(--margin-top-bottom);
+    color: #7577a0;
 }
 .left-section-mail-box a{
     font-size: 1.5rem;
     text-decoration: none;
-    font-family: courier-font;
+    font-family: var(--main-font-family);
     color: var(--btn-font-color);
 }
 /* Social Network */
-.social-network-box{
-    box-shadow: var(--inner-shadow);
-    padding: var(--padding-for-shadow);
-    border-radius: var(--border-for-shadow);
-    margin: var(--margin-top-bottom);
-}
+
 .social-network-link i{
     font-size: 2rem;
     color: var(--btn-font-color);
     padding: 2rem 1rem 2rem 0;
 }
+
 .right-section-of-contact-page img{
     /* height: 100%;
     width: 80%;
@@ -185,4 +184,29 @@ background-color: var(--btn-press-bg-color);
     aspect-ratio: 3/2;
     object-fit: contain;
     mix-blend-mode: color-burn;
+}
+
+@media only screen and (max-width: 100rem) {
+    .right-section-of-contact-page{
+        display: none;
+    }
+    .left-section-of-contact-page{
+        width: 100%;
+    }
+    .contact-container{
+        display: grid;
+        grid-template-columns: none;
+        margin: 5rem 0;
+    }
+    .contactPage-section{
+        width: 90vw;
+    }
+    #contactPage-Main{
+       padding: 0 1rem;
+    }
+}
+@media only screen and (max-width: 50rem){
+    .header-section-of-left-page h2 {
+        font-size: 1.5rem;
+    }
 }

@@ -52,11 +52,12 @@ let navbarSkillImgScr = document.querySelector('.navbarSkillImgScr');
 let navbarProjectImgSrc = document.querySelector('.navbarProjectImgSrc');
 let navbarContactImgSrc = document.querySelector('.navbarContactImgSrc');
 
+console.log(navbarAboutImgScr)
 // Adding Image Source in the variable
 navbarHomeImgScr.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682327844/portfolio%20Image/home_r1mhhx.png`;
 navbarAboutImgScr.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682327844/portfolio%20Image/about_onmbtu.png`;
-navbarSkillImgScr.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682327844/portfolio%20Image/skill_e1dqpa.png`;
-navbarProjectImgSrc.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682327847/portfolio%20Image/work_zvbmh9.png`;
+navbarSkillImgScr.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682441098/portfolio%20Image/skill_e1dqpa.png`;
+navbarProjectImgSrc.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682437880/portfolio%20Image/work_zvbmh9.png`;
 navbarContactImgSrc.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682441628/portfolio%20Image/Screenshot_2023-04-25_222323_k8mq4l.png`;
 
 // Putting Alternet Text
@@ -65,3 +66,4 @@ navbarAboutImgScr.alt = `About Image Loading`;
 navbarSkillImgScr.alt = `Skills Image Loading`;
 navbarProjectImgSrc.alt = `Project Image Loading`;
 navbarContactImgSrc.alt = `Contact Image Loading`;
+
