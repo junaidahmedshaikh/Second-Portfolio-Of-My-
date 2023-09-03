@@ -186,7 +186,7 @@ background-color: var(--btn-press-bg-color);
     mix-blend-mode: color-burn;
 }
 
-@media only screen and (max-width: 100rem) {
+@media only screen and (max-width: 1000px) {
     .right-section-of-contact-page{
         display: none;
     }
@@ -197,12 +197,16 @@ background-color: var(--btn-press-bg-color);
         display: grid;
         grid-template-columns: none;
         margin: 5rem 0;
+        padding: 0 5rem;
     }
     .contactPage-section{
         width: 90vw;
     }
     #contactPage-Main{
        padding: 0 1rem;
+    }
+    .right-section-of-contact-page{
+        display: none;
     }
 }
 @media only screen and (max-width: 50rem){

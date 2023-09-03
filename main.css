@@ -62,7 +62,6 @@ body{
     /* background-color: #1f2933; */
     /* color: #f5f7fa; */
     /* color: #cbd2d9; */
-   
 }
 /* This CSS apply on all pages */
 header {
@@ -372,3 +371,22 @@ input:checked + div span.line-3 {
 input:checked + div span.line-2 {
   transform: translate(-50%, -50%) rotate(45deg);
 }
+
+
+/* Navbar */
+
+/*
+!!! This demo is being refactored !!!
+
+-- add auto focus on the first item of the navigation when it is shown
+-- replace .menu:not(.menu_activated) .menu__list{  display: none; } to hidden
+-- use :is pseudo-class to simplify selectors 
+
+*/
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+/* The component will reset button browser styles */

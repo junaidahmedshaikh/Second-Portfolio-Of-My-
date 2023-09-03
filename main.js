@@ -50,15 +50,15 @@ let navbarHomeImgScr = document.querySelector('.navbarHomeImgScr');
 let navbarAboutImgScr = document.querySelector('.navbarAboutImgScr');
 let navbarSkillImgScr = document.querySelector('.navbarSkillImgScr');
 let navbarProjectImgSrc = document.querySelector('.navbarProjectImgSrc');
-let navbarContactImgSrc = document.querySelector('.navbarContactImgSrc');
+let navbarContImgSrc = document.querySelector('.navbarContactImgSrc');
 
 console.log(navbarAboutImgScr)
 // Adding Image Source in the variable
-navbarHomeImgScr.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682327844/portfolio%20Image/home_r1mhhx.png`;
-navbarAboutImgScr.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682327844/portfolio%20Image/about_onmbtu.png`;
-navbarSkillImgScr.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682441098/portfolio%20Image/skill_e1dqpa.png`;
-navbarProjectImgSrc.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682437880/portfolio%20Image/work_zvbmh9.png`;
-navbarContactImgSrc.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1682441628/portfolio%20Image/Screenshot_2023-04-25_222323_k8mq4l.png`;
+navbarHomeImgScr.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1691938485/portfolio%20Image/Navbar%20Image/Screenshot_2023-08-13_171510_ktbg9d.png`;
+navbarAboutImgScr.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1691938486/portfolio%20Image/Navbar%20Image/Screenshot_2023-08-13_171851_bvwylk.png`;
+navbarSkillImgScr.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1691938485/portfolio%20Image/Navbar%20Image/Screenshot_2023-08-13_171933_wwzmgv.png`;
+navbarProjectImgSrc.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1691938486/portfolio%20Image/Navbar%20Image/Screenshot_2023-08-13_171917_aqakwt.png`;
+navbarContImgSrc.src = `https://res.cloudinary.com/difvkvxuy/image/upload/v1691938485/portfolio%20Image/Navbar%20Image/Screenshot_2023-08-13_171948_iu50qs.png`;
 
 // Putting Alternet Text
 navbarHomeImgScr.alt = `Home Image Loading`;
@@ -66,4 +66,12 @@ navbarAboutImgScr.alt = `About Image Loading`;
 navbarSkillImgScr.alt = `Skills Image Loading`;
 navbarProjectImgSrc.alt = `Project Image Loading`;
 navbarContactImgSrc.alt = `Contact Image Loading`;
+
+
+
+/*
+!!!!!
+This code is created to display element's behavior. I'm not a JS expert so don't use it
+!!!!!
+*/
 
